@@ -1,1 +1,367 @@
-"This is my very first Git experiment." 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvarna S K | My World</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #080808;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        nav h2 {
+            color: #ff1744;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff1744;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background:
+                linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.9)),
+                radial-gradient(circle at center, #32111b, #080808 70%);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #fff;
+        }
+
+        .hero h1 span {
+            color: #ff1744;
+        }
+
+        .hero p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .tagline {
+            margin-top: 25px;
+            font-size: 1.4rem;
+            color: #ff1744;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #ff1744;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #d50032;
+            transform: scale(1.05);
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #ff1744;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #121212;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+            border: 1px solid #292929;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #ff1744;
+            box-shadow: 0 10px 30px rgba(255, 23, 68, 0.2);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #aaa;
+        }
+
+        /* Thrill Section */
+        .thrill {
+            background: #0d0d0d;
+        }
+
+        .quote {
+            text-align: center;
+            font-size: 1.8rem;
+            color: white;
+            max-width: 800px;
+            margin: auto;
+            font-style: italic;
+        }
+
+        .quote span {
+            color: #ff1744;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #050505;
+            color: #777;
+            border-top: 1px solid #222;
+        }
+
+        footer span {
+            color: #ff1744;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>SUVARNA</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#interests">Interests</a>
+            <a href="#thrill">My World</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+
+            <h1>I'm <span>Suvarna S K</span></h1>
+
+            <p>
+                From Byadi, with a passion for music, thrilling web series,
+                gaming, cars, business and everything that makes life exciting.
+            </p>
+
+            <div class="tagline">
+                ⚡ LIVE THE THRILL. CREATE YOUR OWN STORY. ⚡
+            </div>
+
+            <a href="#interests" class="btn">Explore My World</a>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                Hi! I'm <strong>Suvarna S K</strong> from <strong>Byadi</strong>.
+                I love discovering exciting things and enjoying every moment of life.
+                Music is one of my favorite ways to relax, while thrilling and
+                suspenseful web series keep me entertained.
+            </p>
+
+            <br>
+
+            <p>
+                I enjoy the excitement of riding, drifting cars, gaming and
+                especially playing <strong>Free Fire</strong>. I'm also interested
+                in horror, business and marketing. I believe life should be
+                adventurous, creative and full of new experiences.
+            </p>
+        </div>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests">
+        <h2>My Interests</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🎵</div>
+                <h3>Music</h3>
+                <p>
+                    Listening to songs and enjoying different kinds of music
+                    whenever I get the chance.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎬</div>
+                <h3>Web Series</h3>
+                <p>
+                    Thrilling, suspenseful and mysterious web series
+                    are my kind of entertainment.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏎️</div>
+                <h3>Cars & Driving</h3>
+                <p>
+                    I love the excitement of riding, driving and
+                    watching powerful cars drift.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎮</div>
+                <h3>Gaming</h3>
+                <p>
+                    Free Fire and other exciting games are part of
+                    my favorite ways to have fun.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">👻</div>
+                <h3>Horror & Thrill</h3>
+                <p>
+                    Horror, suspense, mystery and thrilling experiences
+                    keep life interesting.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💼</div>
+                <h3>Business</h3>
+                <p>
+                    I'm interested in business, ideas, entrepreneurship
+                    and understanding how businesses grow.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📈</div>
+                <h3>Marketing</h3>
+                <p>
+                    Learning about marketing, brands, creativity and
+                    connecting ideas with people interests me.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Thrill Section -->
+    <section id="thrill" class="thrill">
+
+        <h2>My Way of Life</h2>
+
+        <div class="quote">
+            "Life is too short to be boring.
+            <span>Listen to music, play games, chase adventures,
+            learn business and enjoy the thrill!</span>"
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 <span>Suvarna S K</span> | My World • My Interests • My Journey
+        </p>
+    </footer>
+
+</body>
+</html>
